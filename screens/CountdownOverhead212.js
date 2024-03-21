@@ -17,7 +17,7 @@ const CountdownOverhead212 = () => {
         setSeconds((prevSeconds) => prevSeconds - 1);
       }, 1000);
     } else if (seconds === 0) {
-      navigation.navigate('OverheadExtension3'); // Navigate when countdown finishes
+      navigation.navigate('OverheadExtensionScreen3'); // Navigate when countdown finishes
       clearInterval(interval);
     }
     return () => clearInterval(interval);
@@ -54,7 +54,7 @@ const CountdownOverhead212 = () => {
             <TouchableOpacity style={styles.button} onPress={() => navigation.goBack()}>
               <Text style={styles.buttonText}>PREV</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('OverheadExtension3')}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('OverheadExtensionScreen3')}>
               <Text style={styles.buttonText}>SKIP</Text>
             </TouchableOpacity>
           </View>
